@@ -8,7 +8,7 @@ export default function PokeList({ pokemons }) {
           <div className='pokies'>
             <h2>{pokemon.name_english}</h2>
             <h3>{pokemon.name_japanese}</h3>
-            <p>{pokemon.type_0} pokemon with {pokemon.type_1} </p>
+            <p>{pokemon.type_0} pokemon with {pokemon.type_1} damage </p>
           </div>
         </Link>
       )}
