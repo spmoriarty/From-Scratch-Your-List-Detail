@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function pokeList({ pokemons }) {
+export default function PokeList({ pokemons }) {
   return (
     <div className='poke-list'>
       {pokemons.map((pokemon, i) => 
