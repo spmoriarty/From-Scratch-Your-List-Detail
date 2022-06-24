@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import pokeFetch from './services/fetch-utils';
-import PokeList from './PokeList';
+import PokeList from './PokeList.js';
 import './App.css';
 
 
