@@ -6,7 +6,7 @@ import './App.css';
 
 
 export default function PokePage() {
-  const [pokemon, setPokemon] = useState({});
+  const [pokemon, setPokemon] = useState([]);
   const [page, setPage] = useState(1);
   const perPage = 20;
 

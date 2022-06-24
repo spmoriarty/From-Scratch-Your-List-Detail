@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import pokeFetch from './services/fetch-utils';
 import PokeList from './PokeList';
@@ -17,6 +17,7 @@ export default function Pokemon() {
   
   return (
     <div>
+      <Link to='/'>Home</Link>
       <PokeList pokemons={pokemon}/>
     </div>
   );
