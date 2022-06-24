@@ -18,7 +18,7 @@ export default function Pokemon() {
   return (
     
     <div>
-      <h1>WELCOME TO THE THUNDERDOME</h1>
+      <h2>Stats</h2>
       <Link to='/'>Home</Link>
       <PokeDetail poke={pokemon}/>
     </div>
