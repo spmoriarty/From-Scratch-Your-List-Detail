@@ -3,12 +3,22 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { soloPoke } from './services/fetch-utils';
 
-export default function soloPoke() {
-const params = useParams();
-const [pokeMon, setPokeMon] = useState(params.id);
+export default function PokeDetail() {
+  const params = useParams();
+  const [pokeMon, setPokeMon] = useState(params.id);
 
+  useEffect(() => {
+    async function fetchPokie() {
+      const data = await soloPoke(params.id);
+      setPokeMon(data);
+    } fetchPokie();
+  }, [params.id]);
 
   return (
-    <div>soloPoke</div>
+    <> <Link to='/'>Home</Link>
+      <div className='pokie-detail'>
+        <h1>{pokeMon.name_english}</h1>
+      </div>
+    </>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 // tried pokemon.id instead of .name_english
 export default function PokeList({ pokemons }) {
   return (
