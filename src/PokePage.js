@@ -25,7 +25,7 @@ export default function PokePage() {
   return (
     <><h1>The PokeDex!</h1>
       <div className='pokeDex-buttons'>
-        <button onClick={() => setPage(page - 1)}>Previous PokeDex Page</button>
+        <button disabled={page <= 1} onClick={() => setPage(page - 1)}>Previous PokeDex Page</button>
         <button onClick={() => setPage(page + 1)}>Next PokeDex Page</button>
       </div>
       <PokeList pokemons={pokemon} />
