@@ -14,7 +14,7 @@ export default function Pokemon() {
     }
     getPoke();
   }, [params.id]);
-  
+  //yay
   return (
     
     <div>
